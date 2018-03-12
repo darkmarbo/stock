@@ -31,6 +31,11 @@ user_agent = ["Mozilla/5.0 (Windows NT 10.0; WOW64)", 'Mozilla/5.0 (Windows NT 6
 
 stock_total=[]   #stock_total：所有页面的数据   stock_page：某页的数据
 
+
+
+
+
+
 for page in range(1,8):
 	## http://quote.stockstar.com/stock/ranklist_a_3_1_1.html
     url='http://quote.stockstar.com/stock/ranklist_a_3_1_'+str(page)+'.html'
