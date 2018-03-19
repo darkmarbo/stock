@@ -9,7 +9,7 @@ import tushare as ts
 
 
 
-date_now='2018-03-14'
+date_now='2018-03-16'
 ### 读取list 
 fp_in=open('ttt.txt');
 fp_out=open('tmp', 'w');
