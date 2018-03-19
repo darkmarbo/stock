@@ -9,7 +9,7 @@ import tushare as ts
 
 
 
-date_now='2018-03-09'
+date_now='2018-03-14'
 ### 读取list 
 fp_in=open('ttt.txt');
 fp_out=open('tmp', 'w');
@@ -17,7 +17,7 @@ for id in fp_in:
 
     id=id.strip(); ## 300491
 
-    f = ts.get_k_data(id, start='2018-03-09',end='2018-03-09')
+    f = ts.get_k_data(id, start=date_now, end=date_now)
     fp_out.write("%s\n"%(f));
 
 fp_in.close();
@@ -35,7 +35,7 @@ for line in fp_in:
     if ii %2 == 0:
         vec = line.split(); 
         if len(vec)<8:
-            print('error:%s\n'%(line));
+            print('error:ii=%d\t%s\n'%(ii/2, line));
         else:
             fp_out.write("%s\t%s\n"%(vec[7], vec[3]));
 
